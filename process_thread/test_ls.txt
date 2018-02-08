@@ -1,0 +1,6 @@
+总用量 16K
+-rw-rw-r-- 1 zhouxiaorui zhouxiaorui  857 1月  24 19:30 a_multiprocessing_demo.py
+-rw-rw-r-- 1 zhouxiaorui zhouxiaorui  592 1月  24 10:26 a_mutil_process_fork.py
+-rw-rw-r-- 1 zhouxiaorui zhouxiaorui 1.1K 1月  24 19:57 a_processpool_demo.py
+-rw-rw-r-- 1 zhouxiaorui zhouxiaorui 1.3K 1月  24 22:03 a_subprocess_demo.py
+-rw-rw-r-- 1 zhouxiaorui zhouxiaorui    0 1月  24 22:03 test_ls.txt
