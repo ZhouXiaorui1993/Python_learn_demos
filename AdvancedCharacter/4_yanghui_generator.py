@@ -18,6 +18,7 @@ for t in yang_hui(4):
     result.append(t)
 print(result)
 
+
 #第二种
 def triangles():
     t = []

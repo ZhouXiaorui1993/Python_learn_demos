@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin DongTaTa</title>
+    <style>
+        #sign_form{
+        width: 500px;
+        /*border: 2px solid green;*/
+        text-align: right;  /*右对齐*/
+        margin: 20px auto;
+        }
+        .input{
+        width: 200px;
+        height: 20px;
+        }
+        .button{
+        width: 420px;
+        /*border: 2px solid green;*/
+        text-align: right;
+        margin: 0px auto;
+        padding: 0 80px 0 0;
+        font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="sign_form">
+        {% if message %}
+        <p style="color:red">{{message}}</p>
+        {% endif %}
+        <form action="/login" method="post" id="login_form">
+            用户名:
+            <input class="input" name="username" placeholder="username" value="{{ username }}"><br/>
+            密码:
+            <input class="input" name="password" placeholder="password" type="password"><br/>
+        </form>
+    </div>
+    <div class="button">
+        <button type="submit" form="login_form">登录</button>
+    </div>
+</body>
+</html>

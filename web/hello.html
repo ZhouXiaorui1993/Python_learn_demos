@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html test</title>
+    <style>
+     .cartoonist{
+     background-color:#5F9EA0;
+     color:white;
+     margin:20px;
+     padding:20px;
+     }
+     span.name{
+     font-weight:bold;
+     font-size:30px
+     }
+     #yls_header{
+     background-color:DimGray;
+     color:white;
+     text-align:center;
+     padding:5px;
+     }
+     #yls_list{
+     background-color:LightBlue;
+     line-height:30px;
+     height:300px;
+     width:100px;
+     float:left;
+     padding:10px;
+     }
+     #yls_intro{
+     width:350px;
+     float:left;
+     padding:10px;
+     }
+     #yls_footer{
+     background:DimGray;
+     color:white;
+     text-align:center;
+     padding:5px;
+     clear:both;
+     }
+    </style>
+    <!--clear规定了元素的哪一侧不允许其他浮动元素-->
+    <!--padding表示内边距，可以设置四个值，若只有一个，则表示上下左右均为该值，若都有，则依次为上右下左-->
+</head>
+
+<body style="background-color:PowderBlue;background-image:url(http://img.zcool.cn/community/038c14d56fb2f506ac7257948b61828.jpg)">
+
+<div style="color: #556B2F">
+    <h1 style="color: #333333;font-size: 35px;text-align:center">HTML学习</h1>
+
+    <h2>目录</h2>
+    <ul>
+        <li><a href="#passage">段落</a></li>
+        <li><a href="#photo">图片和链接</a></li>
+        <li><a href="#format">排版</a></li>
+        <li><a href="#code">代码</a></li>
+        <li><a href="#line">删除线和下划线</a></li>
+        <li><a href="#quote">引用</a></li>
+        <li><a href="#address">address标签</a></li>
+        <li><a href="#mao">命名锚</a></li>
+        <li><a href="#sheet">表格</a></li>
+        <li><a href="#list">列表</a></li>
+        <li><a href="#class">HTML类</a></li>
+        <li><a href="#buju">布局</a></li>
+    </ul>
+
+    <h2><a name="passage">段落</a></h2>
+    <p>这里的内容被显示为段落。<br/>换行后：这是第一段</p>
+    <!--<p>是块级元素，<br/>是换行标签-->
+    <hr/>
+
+    <h2><a name="photo">图片和链接</a></h2>
+    <p>上面是hr元素创建的水平分割线，这是第二段</p>
+    <a href="http://www.baidu.com"target="_blank">这是一个链接</a>
+    <!--target属性可以定义被链接的文档在何处显示-->
+    <p>
+        这是一副图像,也可以作为链接
+        <a href="http://ac.qq.com/Comic/ComicInfo/id/549150?trace_id=1_907_10.194.156.134_1479473038" target="_blank">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519986449202&di=aa0bfc687e49b41c4dbcd8c55892c2f3&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1610%2F31%2Fc59%2F29214954_1477924702970_1024x1024.jpg" width="300" height="300" alt="Saiki kusu"/>
+        <!--alt属性用来为图像定义一串预备的可替换的文本，当图片无法载入时，替换文本属性告诉读者他们失去的信息-->
+        </a>
+    </p>
+</div>
+
+    <hr/>
+
+<h2><a name="format">排版</a></h2>
+<p style="text-align:center;color:Sienna;font-family:Microsoft YaHei"><a name="tangshi"><b>泊船瓜洲</b></a></p>
+    <p style="text-align:center;color:Sienna">[宋·王安石]</p>
+    <p style="text-align:center;color:Sienna">京口瓜洲一水间<br/>钟山只隔数重山<br/>春风又绿江南岸<br/>明月何时照我还</p>
+    <!--这是注释的写法-->
+    <!--在HTML中，所有连续的空格和空行都会被视为一个空格-->
+
+    <hr/>
+
+    <h2><a name="code">代码</a></h2>
+    <pre>
+        代码一般这样呈现
+        <code>
+        def hello():
+            print("hello,world!")
+            return None
+        </code>
+    </pre>
+
+    <hr/>
+
+    <h2><a name="line">删除线和下划线</a></h2>
+    <!--pre标签用来定义预格式文本-->
+    <p>春眠不觉晓，<del>出出</del><ins>处处</ins>闻啼鸟</p>
+    <!--del标签是删除线，ins标签为下划线-->
+
+    <hr/>
+
+    <h2><a name="quote">引用</a></h2>
+    <blockquote cite="https://baike.baidu.com/item/%E5%AE%89%E8%BE%BE%E5%85%85/563153?fr=aladdin">
+
+    <p>安达充，日本著名漫画家，其作品力求清新简练，他笔下的人物纯真质朴，感情随心而动，让读者不由得跟随着他们，进入安达充的世界。</p>
+        <p>出道前曾作漫画家石井勇的助手。处女作发表后进入少女漫画界发展，清新柔美的画风在这一阶段渐渐形成。成名作为《最后的冠军》，1981年以《棒球英豪》轰动漫坛。</p>
+
+    </blockquote>
+    <p>abbr标签用于定义缩写或首字母缩略语，例如：<abbr title="World Health Organization">WHO</abbr>成立于1948年。</p>
+
+    <hr/>
+
+    <h2><a name="address">address标签</a></h2>
+    <p>address标签常用于定义文章或文档的联系信息，如下：<br/></p>
+    <address>
+        Written by ZhouXiaorui.<br/>
+        Contact us by:<br/>
+        xxxx@gmail.com<br/>
+        China
+    </address>
+
+    <hr/>
+
+    <h2><a name="mao">命名锚</a></h2>
+    <p>命名锚可以链接到文档（可以是同一个文档，也可以是不同的文档）的某处，例如链接到唐诗处，点击下面的链接：<br/>
+        <a href="#tangshi">泊船瓜洲</a>
+    </p>
+
+    <hr/>
+
+    <h2><a name="sheet">表格</a></h2>
+    <table align="center" width="50%" border="1" bgcolor="PowderBlue" cellpadding="10">
+        <caption><b>一年级花名册</b></caption>
+        <tr bgcolor="white" align="center">
+            <th>学号</th>
+            <th>姓名</th>
+        </tr>
+        <tr align="center">
+            <td>001</td>
+            <td>小红</td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>002</td>
+            <td>小明</td>
+        </tr>
+        <tr align="center">
+            <td>003</td>
+            <td>小刚</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <h2><a name="list">列表</a></h2>
+    <b>可爱的小动物</b>
+    <ul>
+        <li>小狗</li>
+        <li>小猫</li>
+        <li>小刺猬</li>
+    </ul>
+    <b>美丽的花</b>
+    <ol>
+        <li>玫瑰花</li>
+        <li>小雏菊</li>
+        <li>向日葵</li>
+        <li>郁金香</li>
+    </ol>
+    <p>列表项内部可以使用段落、换行符、图片、连接以及其他列表等。</p>
+    <b>喜欢的动漫</b>
+    <dl>
+        <dt>夏目友人帐</dt>
+        <dd style="font-size:13px">一位温柔的少年和一群妖怪们之间的故事</dd>
+        <dt>海贼王</dt>
+        <dd style="font-size:13px">我是要成为海贼王的男人</dd>
+        <dt>棒球英豪</dt>
+        <dd style="font-size:13px">永远的青春</dd>
+    </dl>
+
+    <hr/>
+
+    <h2><a name="class">HTML类</a></h2>
+    <b>对HTML进行分类，使我们能够为元素的类定义CSS样式，根据不同的分类设置不同的样式</b>
+    <!--样式在head中定义-->
+    <div class="cartoonist">
+        <p><span class="name">安达充</span></p>
+        <p style="text-indent:2em">
+           安达充的作品，构图笔调清新淡雅，人物造型纯真可爱，那一双双精灵的大眼睛和一个个
+            修长健美的身材正是日本少男少女们理想的化身。他的画仿佛是一首首青春的叙事诗，令
+            人着迷，惹人遐想。<br/><br/>
+        </p>
+        <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=4dff6b4ea144ad343ab28fd5b1cb6791/1ad5ad6eddc451da5d17c548b6fd5266d11632b4.jpg" style="display:block; position:relative;margin:auto;"/>
+    </div>
+    <div class="cartoonist">
+        <p><span class="name">尾田荣一郎</span></p>
+        <p style="text-indent:2em">
+            因为尾田荣一郎本人多次在他的书籍中表态他最喜欢的漫画是《龙珠》和最崇拜的人物是
+            鸟山明，引发了一些社会舆论，甚至有人将他们两个进行比较，或是贬低他们当中的某位，
+            但这种比较并没有意义，他们都各有千秋，对漫画界也作出了相当大的贡献，同是大人物，
+            私下也有密切的来往和很深的交情，他们谁都不想看到自己的粉丝们相互攻击对方，更何况
+            尾田自小就是一名非常狂热的鸟山迷，为了追逐前人的步伐而踏上漫画之路，他最憧憬的人
+            物便是鸟山明，所以也不希望听到有人谈论一些他和他崇拜的人之间负面的东西。漫画家们都
+            希望他们各自的粉丝也能像他们与其他漫画家的关系一样和睦共处，共同勉励，共同前进。<br/><br/>
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520069224291&di=99c4694e43fbc1ff47200d17ebf15239&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201406%2F26%2F20140626161045_vXT4m.jpeg" style="width:522px; height:372px; display:block; position:relative;margin:auto;"/>
+        </p>
+    </div>
+
+    <hr/>
+
+    <h2><a name="buju">布局</a></h2>
+    <div id="yls_header">
+        <h2>Comics</h2>
+    </div>
+    <div id="yls_list">
+        主要角色<br/>
+        声优<br/>
+        外界评价<br>
+    </div>
+    <div id="yls_intro">
+        <b>夜斗 cv：神谷浩史</b>
+        <p>本作的男主角，性格古怪具有诸多谜团的无名神。</p>
+        <b>一岐日和 cv：内田真礼</b>
+        <p>本作的女主角，性格善良活泼的女孩，起初是初三生，现已成功升学成为高一学生。因某种原因成为半妖，与夜斗、雪音两人结缘。</p>
+        <b>雪音 cv：梶裕贵</b>
+        <p>夜斗的祝器兼道标，14岁的小男孩，性格自大、腹黑、毒舌。赐名雪，神器形态为一把无鞘的太刀，成为祝器后变成双太刀。</p>
+    </div>
+    <div id="yls_footer">
+        Copyright zxr.com.cn
+    </div>
+
+    <hr/>
+</body>
+</html>
